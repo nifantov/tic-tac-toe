@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Tic-tac-toe</title>
+</head>
+<body>
+    <header>
+        <h1>Tic-tac-toe</h1>
+    </header>
+    <!-- Start div -->
+    <div class="pre" id="pre" >
+        <h2>Write player's names</h2>
+        <form class="form" if="form" action="">
+            <div class="input-container">
+                <div>
+                    <label class="label" for="first">X: </label>
+                </div>
+                <input type="text" id="first" name="first" placeholder="write your name" required>
+            </div>
+            <div class="input-container">
+                <div>
+                    <label class="label" for="second">O: </label>
+                </div>
+                <input type="text" id="second" name="second" placeholder="write your name" required>
+            </div>
+        </form>
+        <div class="button-container">
+            <button type="button" id="start">START</button>
+        </div>
+        
+    </div>
+
+
+    <!-- Game -->
+    <main class="main notactive" id="main">
+        <div class="text">
+            <p class="result" id="result"></p>
+        </div>
+        <div class="gameboard" id="gameboard">
+            <div class="item" data-index="0"></div>
+            <div class="item" data-index="1"></div>
+            <div class="item" data-index="2"></div>
+            <div class="item" data-index="3"></div>
+            <div class="item" data-index="4"></div>
+            <div class="item" data-index="5"></div>
+            <div class="item" data-index="6"></div>
+            <div class="item" data-index="7"></div>
+            <div class="item" data-index="8"></div>
+
+        </div>
+        <div class="button-container" id="button-container">
+            <button type="button" id="restart">RESTART</button>
+        </div>
+    </main>
+    <footer>
+        <p>This is a project for <a href="https://www.theodinproject.com/lessons/node-path-javascript-tic-tac-toe">The Odin Project</a> in which I have to make a game using factory function and module pattern.</p> 
+        <p>You can also view the <a href="https://github.com/nifantov/Tic-tac-toe.git">Github repository</a> of this project.</p>
+    </footer>
+    
+</body>
+</html>
